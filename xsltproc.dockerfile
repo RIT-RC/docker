@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:18.04
 
 RUN sed -i 's/archive.ubuntu.com/mirrors.rit.edu/' /etc/apt/sources.list
 RUN apt-get update
