@@ -1,6 +1,5 @@
-FROM ubuntu:18.04
+FROM centos:7
 
-RUN sed -i 's/archive.ubuntu.com/mirrors.rit.edu/' /etc/apt/sources.list
-RUN apt-get update
-RUN apt-get -y upgrade
-RUN apt-get -y install git make libxml2-utils openssh-client samba-common-bin jq crudini
+RUN yum -y update
+RUN yum -y install epel-release
+RUN yum -y install git make libxml2-utils openssh-client samba-common-tools jq crudini
