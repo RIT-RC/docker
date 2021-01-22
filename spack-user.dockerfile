@@ -12,6 +12,7 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install --upgrade flake8
 RUN pip install --upgrade yq
+RUN pip install --upgrade mypy
 RUN useradd spack
 USER spack
 #CMD /bin/bash
