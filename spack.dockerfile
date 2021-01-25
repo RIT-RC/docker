@@ -8,10 +8,10 @@ RUN curl http://mirrors.rit.edu/rit/stable/rit-stable.repo > /etc/yum.repos.d/ri
 RUN curl http://mirrors.rit.edu/rit/upstream/rit-upstream.repo > /etc/yum.repos.d/rit-upstream.repo
 RUN yum -y update
 RUN yum -y install "@Development Tools"
-RUN yum -y install python2-pip git jq environment-modules slurm slurm-devel pmix ucx which moreutils
-RUN pip install --upgrade pip
-RUN pip install --upgrade setuptools
-RUN pip install --upgrade flake8
-RUN pip install --upgrade yq
-RUN pip install --upgrade mypy
+RUN yum -y install python3-pip git jq environment-modules slurm slurm-devel pmix ucx which moreutils
+RUN pip3 install --upgrade pip
+RUN pip3 install --upgrade setuptools
+RUN pip3 install --upgrade flake8
+RUN pip3 install --upgrade yq
+RUN pip3 install --upgrade mypy
 
